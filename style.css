@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 0 2px 4px rgb(13 0 77 / 8%), 0 3px 6px rgb(13 0 77 / 8%), 0 8px 16px rgb(13 0 77 / 8%); 
+}
+body{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 17, 59);
+    margin: auto;
+    flex-direction: column;
+    height: 100vh;
+}
+
+img{
+    width: 80%;
+    margin: 1rem 0 3rem;
+}
+.container{
+    width: 45%;
+    background-color: rgb(0, 166, 255);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.header{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+h2{
+    font-size: 22px;
+    margin: 2rem;
+    color: rebeccapurple;
+}
+h3{
+    font-size: 2rem;
+    margin-bottom:15px;
+}
+p{
+    font-size: 1.8rem;
+}
+
+/*difficulty button*/
+.button-wrapper{
+    display: flex;
+}
+@media only screen and (max-width: 800px){
+    .button-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container{
+        width: auto;
+        height: 100vh;
+    }
+}
+button{
+    height: 50px;
+    width: 60%;
+    margin:10px 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow:inset -6px -5px 10px 0px rgb(0 0 0 / 16%);
+    background-color: rgb(0, 255, 234);
+    border-radius: 10px;
+    font-size: 15px;
+    transition: .5s ease;
+}
+button:nth-child(2){
+    background-color: rgb(115, 0, 255);
+}
+#newgamebutton button{
+    background-color: rgba(0, 255, 13, 0.712);
+    width: 50%;
+    margin: 20px 0;
+}
+button:hover{
+    box-shadow: inset -16px -13px 10px 0px rgb(0 0 0 / 16%);
+}
+
+/*game area*/
+
+#gamearea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    height: 60px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.info{
+    margin-top: 30px;
+    color: rgb(0, 255, 153);
+}
+.info span{
+    font-size: 2rem;
+    color: blue;
+}
